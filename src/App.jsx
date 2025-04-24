@@ -511,48 +511,55 @@ function App() {
     </div>
   </section>
 )}
+
 {currentSection === 'content' && (
   <section className="text-gray-900 dark:text-white animate-fadeIn">
-    <h2 className="text-4xl font-bold mb-12 text-center">Our Content</h2>
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="max-w-6xl mx-auto">
+      <h2 className="text-4xl font-bold mb-12 text-center">
+        <span className="bg-gradient-to-r from-tiktok to-[#25F4EE] bg-clip-text text-transparent">
+          🎥 Our Content
+        </span>
+      </h2>
+    </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {/* Unlimited Entertainment */}
       <div className="aspect-square bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden transition-all hover:scale-105">
-        <div className="w-full h-full bg-gray-300 dark:bg-gray-700 animate-pulse flex items-center justify-center">
-          <span className="text-2xl">🎬</span>
-        </div>
-        <p className="text-center mt-4">✨ Unlimited Entertainment</p>
-        <p className="text-center">Viral dances, lip-sync, and fun challenges that make you have fun!</p>
+        <iframe
+          src="https://www.tiktok.com/embed/v2/7388713432465378566"
+          className="w-full h-3/4"
+          allowFullScreen
+        />
+        <p className="text-center mt-2">✨ Unlimited Entertainment</p>
+        <p className="text-center px-2">Viral dances, lip-sync, and fun challenges that make you have fun!</p>
       </div>
 
       {/* Education & Tips */}
       <div className="aspect-square bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden transition-all hover:scale-105">
-        <div className="w-full h-full bg-gray-300 dark:bg-gray-700 animate-pulse flex items-center justify-center">
-          <span className="text-2xl">📚</span>
-        </div>
-        <p className="text-center mt-4">📚 Education & Tips</p>
-        <p className="text-center">Find tutorials, study tips, and interesting facts for you!</p>
+        <iframe
+          src="https://www.tiktok.com/embed/v2/7458157316102311174"
+          className="w-full h-3/4"
+          allowFullScreen
+        />
+        <p className="text-center mt-2">📚 Education & Tips</p>
+        <p className="text-center px-2">Find tutorials, study tips, and interesting facts for you!</p>
       </div>
 
       {/* Local Cultural Diversity */}
       <div className="aspect-square bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden transition-all hover:scale-105">
-        <div className="w-full h-full bg-gray-300 dark:bg-gray-700 animate-pulse flex items-center justify-center">
-          <span className="text-2xl">🇮🇩</span>
-        </div>
-        <p className="text-center mt-4">🇮🇩 Local Cultural Diversity</p>
-        <p className="text-center">Indonesian creators introduce regional culture and culinary specialties.</p>
+        <iframe
+          src="https://www.tiktok.com/embed/v2/7453080051949604101"
+          className="w-full h-3/4"
+          allowFullScreen
+        />
+        <p className="text-center mt-2">🇮🇩 Local Cultural Diversity</p>
+        <p className="text-center px-2">Indonesian creators introduce regional culture and culinary specialties.</p>
       </div>
-
-      {/* Other Creators */}
-      {[...Array(5)].map((_, index) => (
-        <div key={index} className="aspect-square bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden transition-all hover:scale-105">
-          <div className="w-full h-full bg-gray-300 dark:bg-gray-700 animate-pulse flex items-center justify-center">
-            <span className="text-2xl">🎬</span>
-          </div>
-        </div>
-      ))}
     </div>
   </section>
 )}
+
+
+
 
         {currentSection === 'contact' && (
           <section className="text-gray-900 dark:text-white animate-fadeIn">
